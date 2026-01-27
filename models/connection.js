@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const connectionString =
-  "mongodb+srv://danieljeansimon:Wayne93100@cluster0.m7tpuf1.mongodb.net/tickethack/backend";
+const connectionString = process.env.DB_URI;
+console.log(connectionString);
 
 mongoose
   .connect(connectionString, { connectTimeoutMS: 1000 })

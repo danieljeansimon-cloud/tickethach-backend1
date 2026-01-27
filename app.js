@@ -1,5 +1,7 @@
-require("./models/connection");
 require("dotenv").config();
+require("./models/connection");
+
+console.log(process.env.DB_URI);
 
 const express = require("express");
 
