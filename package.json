@@ -1,0 +1,15 @@
+{
+  "name": "tickethack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node generateTrips.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "moment": "^2.29.3",
+    "moment-random": "^1.1.0",
+    "mongoose": "^9.1.5",
+    "node-fetch": "2"
+  }
+}
