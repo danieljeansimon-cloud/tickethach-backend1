@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const connectionString =
-  "mongodb+srv://danieljeansimon:Wayne93100@cluster0.m7tpuf1.mongodb.net/tickethach/backend";
+  "mongodb+srv://danieljeansimon:Wayne93100@cluster0.m7tpuf1.mongodb.net/tickethack/backend";
 
 mongoose
   .connect(connectionString, { connectTimeoutMS: 1000 })
