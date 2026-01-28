@@ -4,6 +4,7 @@ require("./models/connection");
 console.log(process.env.DB_URI);
 
 const express = require("express");
+const tripsRouter = require("./routes/trips");
 
 //var express = require("express");
 var path = require("path");
@@ -23,5 +24,5 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-
+app.use("/trips", tripsRouter);
 module.exports = app;
