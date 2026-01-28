@@ -4,7 +4,7 @@ const connectionString = process.env.DB_URI;
 console.log(connectionString);
 
 mongoose
-  .connect(connectionString, { connectTimeoutMS: 1000 })
+  .connect(connectionString, { connectTimeoutMS: 5000 })
   .then(() => {
     console.log("Connected to MongoDB");
   })
