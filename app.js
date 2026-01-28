@@ -3,7 +3,6 @@ require("./models/connection");
 
 
 const express = require("express");
-const tripsRouter = require("./routes/trips");
 const cors = require("cors");
 
 
@@ -13,7 +12,7 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-
+const tripsRouter = require("./routes/trips");
 var app = express();
 
 app.use(logger("dev"));
